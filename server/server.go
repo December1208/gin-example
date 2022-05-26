@@ -6,7 +6,7 @@ import (
 )
 
 func Init() {
-	gin.SetMode(gin.ReleaseMode)
+	gin.SetMode(gin.DebugMode)
 	r := CreateEngine()
 	err := r.Run(":8855")
 	if err != nil {

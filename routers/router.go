@@ -7,9 +7,9 @@ import (
 )
 
 func InitRouters(eng *gin.Engine)  {
-	v2api := eng.Group("/v2/api")
+	api := eng.Group("/api")
 	{
 		controller := new(controllers.Controller)
-		v2api.GET("/index", controller.Index)
+		api.GET("/index", controller.Index)
 	}
 }
